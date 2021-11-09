@@ -46,7 +46,11 @@ export class OrbitControls {
     keys: { LEFT: string; UP: string; RIGHT: string; BOTTOM: string };
     mouseButtons: { LEFT: MOUSE; MIDDLE: MOUSE; RIGHT: MOUSE };
     touches: { ONE: TOUCH; TWO: TOUCH };
+    
+    dollyIn(dollyScale: number): void;
 
+    dollyOut(dollyScale: number): void;
+    
     update(): boolean;
 
     listenToKeyEvents(domElement: HTMLElement): void;
